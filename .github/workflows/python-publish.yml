@@ -38,6 +38,6 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Build and Deploy to PyPI
-      uses: ./.github/actions/build-deploy
+      uses: JRubics/poetry-publish@v2.0
       with:
         pypi-token: ${{ secrets.PYPI_API_TOKEN }}
